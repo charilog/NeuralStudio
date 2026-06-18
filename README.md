@@ -5,7 +5,7 @@
 > No Python. No browser. No setup scripts. Just load a dataset, configure a network, and train.
 
 <p align="center">
-  <img src="./imgs/img1n.png" alt="NeuralStudio logo" width="720">
+  <img src="./imgs/img1.png" alt="NeuralStudio logo" width="720">
 </p><br>
 ---
 
