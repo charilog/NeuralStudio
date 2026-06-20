@@ -147,7 +147,13 @@ Automates training of **all selected optimiser × dataset combinations** in a si
 | **PNG figures** | Wilcoxon and Friedman plots at 300 DPI |
 
 ---
+## Windows installer
 
+> **Windows installer available:** Download and run **NeuralStudio.exe** from:
+>
+> **[NeuralStudio.exe (Windows Installer)](https://www.dit.uoi.gr/files/NeuralStudio.zip)**
+>
+> 
 ## Build
 
 ### Windows (PowerShell)
