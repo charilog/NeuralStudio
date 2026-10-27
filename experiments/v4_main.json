@@ -1,0 +1,302 @@
+{
+    "name": "v4_main",
+    "description": "FROZEN after v4_dev, NeuralStudio 1.0.5 or 1.0.6 (v17 audit: exact logit cross-entropy, line-search and single-point-budget fixes; 1.0.6 changes only Modes 1-5 and the Mode 6 Log tab, the Mode 6 computations are identical; see docs/AUDIT_v14.md). Method SAGE (config unifiedpe-sage unless the decision rule of v4_dev selects unified-sage; row sage = periodic input embedding chosen by the grammar + diverse noise-aware ensemble + 5-fold CV committees), options identical to v4_dev. 64 datasets of the BNF-training paper, 10 folds, same models as v4_confirm. The development datasets listed below are excluded from the hypothesis tests and reported separately. Replaces v3_main (run with 1.0.4); results of the two versions must not be combined.",
+    "configs": [
+        "unifiedpe-sage"
+    ],
+    "data_dir": "sample_data/tenfolding",
+    "datasets": {
+        "classification": [
+            "alcohol",
+            "australian",
+            "bands",
+            "cleveland",
+            "circular",
+            "dermatology",
+            "ecoli",
+            "haberman",
+            "hayes-roth",
+            "heart",
+            "heartAttack",
+            "housevotes",
+            "ionosphere",
+            "liverdisorder",
+            "lymography",
+            "mammographic",
+            "parkinsons",
+            "pima",
+            "popfailures",
+            "regions2",
+            "saheart",
+            "statheart",
+            "student",
+            "tae",
+            "transfusion",
+            "wdbc",
+            "wine",
+            "z_f_s",
+            "zo_nf_s",
+            "z_o_n_f_s",
+            "zonf_s",
+            "zoo",
+            "segment",
+            "spiral",
+            "spambase",
+            "phoneme",
+            "page-blocks",
+            "ring",
+            "magic"
+        ],
+        "regression": [
+            "auto",
+            "BK",
+            "BL",
+            "baseball",
+            "concrete",
+            "dee",
+            "eu",
+            "FA",
+            "friedman",
+            "fy",
+            "ho",
+            "housing",
+            "laser",
+            "lw",
+            "mortgage",
+            "pl",
+            "realestate",
+            "SN",
+            "stock",
+            "treasury",
+            "tz",
+            "ve",
+            "airfoil",
+            "quake",
+            "abalone"
+        ]
+    },
+    "folds": "1-10",
+    "seeds": 1,
+    "options": {
+        "ens-max": 8,
+        "ens-pool": 12,
+        "final-iters": 200,
+        "final-pop": 80,
+        "gens": 40,
+        "inner-iters": 60,
+        "inner-pop": 30,
+        "patience": 15,
+        "pop": 40,
+        "se-rule": 1,
+        "total-budget": 600000
+    },
+    "output": "results/v4_main",
+    "models": [
+        {
+            "bnf": false,
+            "id": "standard",
+            "label": "Standard",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "standard_T",
+            "label": "Standard (T)",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "grid_T",
+            "label": "Grid search (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1",
+            "label": "GE #1",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T",
+            "label": "GE #1 (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T_nofeat",
+            "label": "GE #1 (T) no features",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T_nobounds",
+            "label": "GE #1 (T) no bounds",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "adam",
+            "label": "ADAM",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "bfgs",
+            "label": "BFGS",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "genetic",
+            "label": "GENETIC",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "neat",
+            "label": "NEAT",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "rbf",
+            "label": "RBF",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "knn",
+            "label": "kNN",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "linear",
+            "label": "Logistic / ridge",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "rf",
+            "label": "Random forest",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "svm",
+            "label": "SVM",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "gnn",
+            "label": "GNN",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "standard_T_ad",
+            "label": "Standard (T) adaptive",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "std_ens_T",
+            "label": "Standard ensemble (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T_ad",
+            "label": "GE #1 (T) adaptive",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T",
+            "label": "GE ensemble (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_nofeat",
+            "label": "GE ensemble (T) no features",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_nobounds",
+            "label": "GE ensemble (T) no bounds",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_div",
+            "label": "GE ensemble (T) diverse",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_cv",
+            "label": "GE ensemble (T) CV",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "std_ens_T_cv",
+            "label": "Standard ensemble (T) CV",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "sage",
+            "label": "SAGE",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_noemb",
+            "label": "SAGE no embedding",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_nofeat",
+            "label": "SAGE no features",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_nobounds",
+            "label": "SAGE no bounds",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_one",
+            "label": "SAGE one member",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "sage_std",
+            "label": "SAGE standard nets",
+            "run": true
+        }
+    ],
+    "development_datasets": [
+        "airfoil",
+        "alcohol",
+        "bands",
+        "circular",
+        "concrete",
+        "ecoli",
+        "hayes-roth",
+        "housing",
+        "phoneme",
+        "segment",
+        "spiral",
+        "tae"
+    ]
+}

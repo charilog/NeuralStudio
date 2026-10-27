@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\app\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\dataset\Dataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\dataset\DatasetLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\dataset\CompanionFinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\dataset\loaders\NeuralDesignerLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\dataset\loaders\CsvLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\nn\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\nn\NeuralNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\nn\Trainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\nn\ModelSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\nn\RBFNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\nn\RBFTrainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\NSProblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\MetaTrainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\lbfgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\genetic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\conjgrad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\levenberg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\simann.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\neldermead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\pbil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\umda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\acor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\arq3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\clpso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\cmaes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\de.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\jso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\lmcmaes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\mlshaderl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\optimizers\pso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\validation\CrossValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\batch\BatchRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\export\CppExporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\export\OnnxExporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\export\XlsxWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\stats\Statistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\BatchPlotWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\WilcoxonTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\FriedmanTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\DataPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\NetworkPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\TrainingPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\EvaluationPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\PredictionPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\BatchPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\PreTrainNNCPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\EvolBoundsPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\ArchSearchPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\GEStudioPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\GEExperimentDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\ui\panels\GEModelPicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\pretrain\PreTrainWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\bounds\EvolBoundsWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\arch\ArchSearchWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\Grammar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\GEEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\NetSpec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\GEStudioWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\GEBatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\GEReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\GEExperiment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\src\core\ge\Baselines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\UVLADIE3JM_Debug\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\UVLADIE3JM_Release\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\UVLADIE3JM_MinSizeRel\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Desktop\NeuralStudio\build\neuralstudio_autogen\UVLADIE3JM_RelWithDebInfo\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\admin\Desktop\NeuralStudio\build\CMakeFiles\49e0bc8e01d26230e08c63046fbaf6f0\qrc_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\admin\Desktop\NeuralStudio\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\admin\Desktop\NeuralStudio\src\resources.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\admin\Desktop\NeuralStudio\resources\app.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{88FC3C6F-4E23-338F-AC6F-9D32C87321A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{221A7342-1622-347D-B8F8-8B086594E89B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

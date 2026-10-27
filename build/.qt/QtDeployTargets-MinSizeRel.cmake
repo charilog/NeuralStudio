@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_neuralstudio_FILE C:/Users/admin/Desktop/NeuralStudio/build/MinSizeRel/neuralstudio.exe)
+set(__QT_DEPLOY_TARGET_neuralstudio_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_neuralstudio_RUNTIME_DLLS C:/Qt/6.10.1/msvc2022_64/bin/Qt6Charts.dll;C:/Qt/6.10.1/msvc2022_64/bin/Qt6Svg.dll;C:/Qt/6.10.1/msvc2022_64/bin/Qt6OpenGLWidgets.dll;C:/Qt/6.10.1/msvc2022_64/bin/Qt6Widgets.dll;C:/Qt/6.10.1/msvc2022_64/bin/Qt6OpenGL.dll;C:/Qt/6.10.1/msvc2022_64/bin/Qt6Gui.dll;C:/Qt/6.10.1/msvc2022_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_neuralstudio-cli_FILE C:/Users/admin/Desktop/NeuralStudio/build/MinSizeRel/neuralstudio-cli.exe)
+set(__QT_DEPLOY_TARGET_neuralstudio-cli_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_neuralstudio-cli_RUNTIME_DLLS C:/Qt/6.10.1/msvc2022_64/bin/Qt6Core.dll)

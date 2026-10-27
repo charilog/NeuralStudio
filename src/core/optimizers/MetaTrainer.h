@@ -1,0 +1,70 @@
+#pragma once
+#include "core/nn/NeuralNetwork.h"
+#include "core/nn/Trainer.h"        // for EpochResult, TrainerConfig
+#include "core/dataset/Dataset.h"
+#include <QObject>
+#include <QString>
+#include <atomic>
+#include <memory>
+
+namespace optimsolution { class Optimizer; }
+
+namespace NeuralStudio {
+
+// ─── MetaTrainer ──────────────────────────────────────────────────────────────
+//  A drop-in replacement for Trainer that drives one of the optimsolution
+//  metaheuristic optimisers (DE, PSO, CMA-ES, JSO, …) instead of gradient
+//  descent.
+//
+//  Emits the same signals as Trainer so the TrainingPanel chart works without
+//  changes.
+//
+//  Mapping of TrainerConfig fields to evolutionary concepts:
+//    epochs    → number of optimizer iterations (= generations)
+//    batchSize → population size
+//    valSplit  → validation fraction (for monitoring only; loss computed on
+//                the entire training set)
+//    earlyStoppingPatience → stops when val-loss does not improve
+//
+//  LR, LR schedule, and Adam params are ignored.
+// ─────────────────────────────────────────────────────────────────────────────
+class MetaTrainer : public QObject {
+    Q_OBJECT
+public:
+    explicit MetaTrainer(QObject* parent = nullptr);
+
+    void setConfig     (const TrainerConfig& cfg)    { m_cfg = cfg; }
+    void setOptimizerName(const QString& name)        { m_name = name; }
+    void setNetwork    (NeuralNetwork* net)           { m_net = net; }
+    void setDataset    (const Dataset*  ds)           { m_ds  = ds;  }
+    void setWeightBound(double bound)                 { m_wBound = bound; }
+    // External validation dataset (e.g. the companion .test file).
+    // When set, ALL training samples are used for training and the external
+    // dataset is used for val-loss monitoring (val split of cfg is ignored).
+    // isTestSet = true: the dataset is the held-out TEST file (monitoring curve only);
+    // early stopping is then disabled so the test file cannot choose the stopping point.
+    void setExternalValDataset(const Dataset* valDs, bool isTestSet = false) { m_externalValDs = valDs; m_valIsTest = isTestSet; }
+
+public slots:
+    void run();
+    void requestStop() { m_stop.store(true); }
+
+signals:
+    void epochCompleted  (EpochResult result);
+    void trainingFinished(double finalValLoss);
+    void trainingError   (QString msg);
+
+private:
+    std::unique_ptr<optimsolution::Optimizer> createOptimizer() const;
+
+    TrainerConfig       m_cfg;
+    QString             m_name;
+    NeuralNetwork*      m_net    = nullptr;
+    const Dataset*      m_ds     = nullptr;
+    const Dataset*      m_externalValDs = nullptr;
+    bool                m_valIsTest = false;
+    double              m_wBound = 5.0;
+    std::atomic<bool>   m_stop{false};
+};
+
+} // namespace NeuralStudio

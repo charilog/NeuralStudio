@@ -1,0 +1,5 @@
+C:/Users/admin/Desktop/NeuralStudio/build/CMakeFiles/neuralstudio.dir
+C:/Users/admin/Desktop/NeuralStudio/build/CMakeFiles/neuralstudio-cli.dir
+C:/Users/admin/Desktop/NeuralStudio/build/CMakeFiles/INSTALL.dir
+C:/Users/admin/Desktop/NeuralStudio/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/admin/Desktop/NeuralStudio/build/CMakeFiles/ZERO_CHECK.dir

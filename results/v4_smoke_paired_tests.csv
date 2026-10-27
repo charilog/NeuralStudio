@@ -1,0 +1,11 @@
+scope,A,B,units,mean_A,mean_B,A_better,tie,B_better,p,sig
+BK [unifiedpe-sage],sage,sage_std,1,0.01502631718,0.01410623978,0,0,1,1,ns
+BK [unifiedpe-sage],sage,sage_noemb,1,0.01502631718,0.01549663878,1,0,0,1,ns
+BK [unifiedpe-sage],sage,sage_nofeat,1,0.01502631718,0.01453382981,0,0,1,1,ns
+BK [unifiedpe-sage],sage,sage_nobounds,1,0.01502631718,0.01360637177,0,0,1,1,ns
+BK [unifiedpe-sage],sage,sage_one,1,0.01502631718,0.01508438931,1,0,0,1,ns
+wine [unifiedpe-sage],sage,sage_std,1,11.76470588,5.882352941,0,0,1,1,ns
+wine [unifiedpe-sage],sage,sage_noemb,1,11.76470588,5.882352941,0,0,1,1,ns
+wine [unifiedpe-sage],sage,sage_nofeat,1,11.76470588,5.882352941,0,0,1,1,ns
+wine [unifiedpe-sage],sage,sage_nobounds,1,11.76470588,11.76470588,0,1,0,-,-
+wine [unifiedpe-sage],sage,sage_one,1,11.76470588,11.76470588,0,1,0,-,-

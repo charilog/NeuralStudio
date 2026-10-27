@@ -1,0 +1,226 @@
+{
+    "configs": [
+        "unifiedpe-sage"
+    ],
+    "data_dir": "sample_data/tenfolding",
+    "datasets": {
+        "classification": [
+            "wine"
+        ],
+        "regression": [
+            "BK"
+        ]
+    },
+    "description": "Quick check (about 10-20 minutes) with NeuralStudio 1.0.5 (v17 audit: exact logit cross-entropy, line-search and single-point-budget fixes; see docs/AUDIT_v14.md) that the SAGE rows run and the report is built. Tiny budget; its numbers mean nothing.",
+    "folds": "1",
+    "models": [
+        {
+            "bnf": false,
+            "id": "standard",
+            "label": "Standard",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "standard_T",
+            "label": "Standard (T)",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "grid_T",
+            "label": "Grid search (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1",
+            "label": "GE #1",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T",
+            "label": "GE #1 (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T_nofeat",
+            "label": "GE #1 (T) no features",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T_nobounds",
+            "label": "GE #1 (T) no bounds",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "adam",
+            "label": "ADAM",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "bfgs",
+            "label": "BFGS",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "genetic",
+            "label": "GENETIC",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "neat",
+            "label": "NEAT",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "rbf",
+            "label": "RBF",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "knn",
+            "label": "kNN",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "linear",
+            "label": "Logistic / ridge",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "rf",
+            "label": "Random forest",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "svm",
+            "label": "SVM",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "gnn",
+            "label": "GNN",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "standard_T_ad",
+            "label": "Standard (T) adaptive",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "std_ens_T",
+            "label": "Standard ensemble (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ge1_T_ad",
+            "label": "GE #1 (T) adaptive",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T",
+            "label": "GE ensemble (T)",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_nofeat",
+            "label": "GE ensemble (T) no features",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_nobounds",
+            "label": "GE ensemble (T) no bounds",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_div",
+            "label": "GE ensemble (T) diverse",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "ens_T_cv",
+            "label": "GE ensemble (T) CV",
+            "run": false
+        },
+        {
+            "bnf": false,
+            "id": "std_ens_T_cv",
+            "label": "Standard ensemble (T) CV",
+            "run": false
+        },
+        {
+            "bnf": true,
+            "id": "sage",
+            "label": "SAGE",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_noemb",
+            "label": "SAGE no embedding",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_nofeat",
+            "label": "SAGE no features",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_nobounds",
+            "label": "SAGE no bounds",
+            "run": true
+        },
+        {
+            "bnf": true,
+            "id": "sage_one",
+            "label": "SAGE one member",
+            "run": true
+        },
+        {
+            "bnf": false,
+            "id": "sage_std",
+            "label": "SAGE standard nets",
+            "run": true
+        }
+    ],
+    "name": "v4_smoke",
+    "options": {
+        "ens-max": 8,
+        "ens-pool": 12,
+        "final-iters": 30,
+        "final-pop": 20,
+        "gens": 4,
+        "inner-iters": 15,
+        "inner-pop": 10,
+        "patience": 15,
+        "pop": 12,
+        "se-rule": 1,
+        "total-budget": 40000
+    },
+    "output": "results/v4_smoke",
+    "seeds": 1
+}
