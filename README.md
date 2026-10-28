@@ -292,14 +292,6 @@ The build produces the graphical application `neuralstudio` and the console prog
 
 ### Windows (PowerShell)
 
-**Option A — build script** (configure, build, deploy Qt, run):
-```powershell
-.\build.ps1 -QtPath "C:\Qt\6.10.1\msvc2022_64"
-# without the console program:
-.\build.ps1 -QtPath "C:\Qt\6.10.1\msvc2022_64" -NoCli
-```
-
-**Option B — individual steps:**
 ```powershell
 # 1. Clean previous build (optional)
 Remove-Item -Recurse -Force build -ErrorAction SilentlyContinue
