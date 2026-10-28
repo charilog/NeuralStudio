@@ -5,7 +5,7 @@
 > No Python. No browser. Load a dataset, configure a network, and train — or run complete experiments from the command line.
 
 <p align="center">
-  <img src="./imgs/img1.png" alt="NeuralStudio logo" width="720">
+  <img src="./docs/img1.png" alt="NeuralStudio logo" width="720">
 </p><br>
 
 ---
